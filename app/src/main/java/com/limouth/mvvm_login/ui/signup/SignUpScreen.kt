@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.limouth.mvvm_login.R
 import com.limouth.mvvm_login.ui.components.HeadingTextComponent
+import com.limouth.mvvm_login.ui.components.MyTextFieldComponent
 import com.limouth.mvvm_login.ui.components.NormalTextComponent
 
 @Composable
@@ -27,6 +28,9 @@ fun SignUpScreen() {
         Column(modifier = Modifier.fillMaxSize()) {
             NormalTextComponent(value = stringResource(R.string.hello))
             HeadingTextComponent(value = stringResource(id = R.string.create_account))
+            MyTextFieldComponent(
+                labelValue = stringResource(id = R.string.first_name)
+            )
         }
     }
 }
